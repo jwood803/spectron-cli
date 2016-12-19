@@ -1,0 +1,14 @@
+{
+  "name": "spectron-cli",
+  "version": "1.0.0",
+  "description": "Command line tool for Spectron tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "spectron"
+  ],
+  "author": "Jon Wood",
+  "license": "ISC"
+}
