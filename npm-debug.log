@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.6
+3 info using node@v4.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/jonwood/Documents/Visual Studio 2013/Projects/GitHub/spectron-cli',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/jonwood/.npm/spectron-cli/0.1.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/jonwood/.npm correctMkdir not in flight; initializing
+10 info lifecycle spectron-cli@0.1.0~prepublish: spectron-cli@0.1.0
+11 silly lifecycle spectron-cli@0.1.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/jonwood/.npm/spectron-cli/0.1.0/package.tgz',
+12 verbose tar pack   '/Users/jonwood/Documents/Visual Studio 2013/Projects/GitHub/spectron-cli' ]
+13 verbose tarball /Users/jonwood/.npm/spectron-cli/0.1.0/package.tgz
+14 verbose folder /Users/jonwood/Documents/Visual Studio 2013/Projects/GitHub/spectron-cli
+15 verbose addLocalTarball adding from inside cache /Users/jonwood/.npm/spectron-cli/0.1.0/package.tgz
+16 verbose correctMkdir /Users/jonwood/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd spectron-cli@0.1.0
+18 verbose afterAdd /Users/jonwood/.npm/spectron-cli/0.1.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/jonwood/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/jonwood/.npm/spectron-cli/0.1.0/package/package.json written
+21 silly publish { name: 'spectron-cli',
+21 silly publish   version: '0.1.0',
+21 silly publish   description: 'Command line tool for Spectron tests',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   keywords: [ 'spectron' ],
+21 silly publish   author: { name: 'Jon Wood' },
+21 silly publish   license: 'ISC',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/jwood803/spectron-cli.git' },
+21 silly publish   preferGlobal: true,
+21 silly publish   bin: { 'spectron-cli': 'main.js' },
+21 silly publish   readme: 'CLI tool to help create and add [Spectron](http://electron.atom.io/spectron/) tests.\n\n### Install\n`npm install spectron-cli`\n\n### Usage\n\n#### Initialize Spectron tests\n`spectron-cli init`\n\nThe `init` command does a couple of things:\n- Creates an `e2e` directory, if it doesn\'t already exist.\n- Creates a `test.spec.js` file with a Spectron test template.\n- Creates a `test.page.js` file with a template to host properties and function.\n\n#### Add Spectron test file\n`spectron-cli add [test name]`\n\nThe `add` command adds a new spec file with the name of your choosing (default is `test.spec.js`).\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'fcd46835061008493030b825b8f770969e97ced3',
+21 silly publish   bugs: { url: 'https://github.com/jwood803/spectron-cli/issues' },
+21 silly publish   homepage: 'https://github.com/jwood803/spectron-cli#readme',
+21 silly publish   _id: 'spectron-cli@0.1.0',
+21 silly publish   _shasum: 'c880e42dfc44ab126ab48d8cec166a0011d49a5a',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name spectron-cli
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'spectron-cli',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'spectron-cli',
+26 silly mapToRegistry   name: 'spectron-cli',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/spectron-cli
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/jonwood/.npm/spectron-cli/0.1.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/spectron-cli
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 10:45:45 AM
+33 verbose request using bearer token for auth
+34 verbose request id 9a52f94ca968be90
+35 http request PUT https://registry.npmjs.org/spectron-cli
+36 http 403 https://registry.npmjs.org/spectron-cli
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Tue, 20 Dec 2016 15:44:47 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-atl6243-ATL',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1482248686.179439,VS0,VE883',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/jonwood/.npm/registry.npmjs.org/spectron-cli on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.1.0." : spectron-cli
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:87:13)
+40 verbose stack     at Request.emit (events.js:172:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:82:20)
+40 verbose stack     at Request.emit (events.js:169:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid spectron-cli
+43 verbose cwd /Users/jonwood/Documents/Visual Studio 2013/Projects/GitHub/spectron-cli
+44 error Darwin 16.1.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v4.5.0
+47 error npm  v3.10.6
+48 error code E403
+49 error "You cannot publish over the previously published version 0.1.0." : spectron-cli
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
