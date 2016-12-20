@@ -1,6 +1,6 @@
 {
   "name": "spectron-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Command line tool for Spectron tests",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,10 +9,13 @@
     "spectron"
   ],
   "author": "Jon Wood",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jwood803/spectron-cli"
+    "url": "git://github.com/jwood803/spectron-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/jwood803/spectron-cli/issues"
   },
   "preferGlobal": true,
   "bin": {
