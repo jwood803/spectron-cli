@@ -2,6 +2,9 @@ const Application = require("spectron").Application;
 const path = require('path');
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
+const testPage = require('./test.page.js');
+
+var page = new testPage();
 
 var electronPath = path.join(__dirname, '..', 'node_modules', '.bin', 'electron');
 

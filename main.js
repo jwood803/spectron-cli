@@ -4,6 +4,7 @@ var fs = require('fs');
 var args = process.argv.splice(2);
 var e2eDir = "./e2e";
 var defaultTest = "./e2e/test.spec.js";
+var defaultPage = "./e2e/test.page.js";
 
 switch(args[0]) {
   case "init":
@@ -11,12 +12,11 @@ switch(args[0]) {
       fs.mkdirSync(e2eDir);
     }
 
-    console.log(process.cwd());
-    console.log(__dirname);
+    var testTemplate = fs.readFileSync(__dirname + "/template.js", "UTF-8");
+    var pageTemplate = fs.readFileSync(__dirname + "/template.page.js", "UTF-8");
 
-    var template = fs.readFileSync(__dirname + "/template.js", "UTF-8");
-
-    fs.writeFileSync(defaultTest, template);
+    fs.writeFileSync(defaultTest, testTemplate);
+    fs.writeFileSync(defaultPage, pageTemplate);
 
     console.log("initialize");
     break;
