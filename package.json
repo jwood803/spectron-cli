@@ -10,6 +10,10 @@
   ],
   "author": "Jon Wood",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwood803/spectron-cli"
+  },
   "preferGlobal": true,
   "bin": {
     "spectron-cli": "main.js"
